@@ -3,20 +3,24 @@ package myAcademy.learning;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+@Component
 public class GameImpl implements Game{
     private static final Logger log= LoggerFactory.getLogger(GameImpl.class);
 
-    @Autowired
-    private NumberGenerate numberGenerate;
+    private final NumberGenerate numberGenerate;
 
+    private final int guessCount;
 
     @Autowired
-    @GuessCount
-    private int guessCount;
+    public GameImpl(NumberGenerate numberGenerate,@GuessCount int guessCount) {
+        this.numberGenerate = numberGenerate;
+        this.guessCount = guessCount;
+    }
 
     private int number;
     private int guess;
