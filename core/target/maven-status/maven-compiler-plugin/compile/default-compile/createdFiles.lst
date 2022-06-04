@@ -1,7 +1,10 @@
 myAcademy\learning\Game.class
 myAcademy\learning\GameImpl.class
+myAcademy\learning\GuessCount.class
 myAcademy\learning\MessageGenerator.class
 myAcademy\learning\NumberGeneratorImpl.class
 myAcademy\learning\NumberGenerate.class
+myAcademy\learning\MinNumber.class
+myAcademy\learning\config\GameConfig.class
 myAcademy\learning\MessageGeneratorImpl.class
-myAcademy\learning\AppConfig.class
+myAcademy\learning\MaxNumber.class

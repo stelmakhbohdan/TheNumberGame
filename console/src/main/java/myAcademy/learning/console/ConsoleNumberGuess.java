@@ -1,5 +1,6 @@
 package myAcademy.learning.console;
 
+import lombok.extern.slf4j.Slf4j;
 import myAcademy.learning.Game;
 import myAcademy.learning.MessageGenerator;
 import org.slf4j.Logger;
@@ -12,10 +13,8 @@ import org.springframework.stereotype.Component;
 import java.util.Scanner;
 
 @Component
+@Slf4j
 public class ConsoleNumberGuess  {
-    private static final Logger log = LoggerFactory.getLogger(ConsoleNumberGuess.class);
-
-
     private final Game game;
 
     private final MessageGenerator messageGenerator;
